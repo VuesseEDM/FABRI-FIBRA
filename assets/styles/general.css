@@ -82,7 +82,7 @@ transform: translateY(2px); /* Aggiungi una piccola traslazione durante l'active
   .scroll-indicator {
     position: fixed;
     bottom: 30px;
-    left:90%;
+    left:80%;
     cursor: pointer;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -91,7 +91,7 @@ font-size:30px;
   .scroll-indicator-up {
     position: fixed;
     top: 90px;
-    left:90%;
+    left:80%;
     cursor: pointer;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -101,3 +101,7 @@ font-size:30px;
 font-size: 30px;
 
   }
+.arrow{
+font-size:30px;
+.down{
+font-size:30px;
