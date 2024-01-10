@@ -1,0 +1,395 @@
+@import url('https://fonts.cdnfonts.com/css/gorefont');
+
+    
+
+
+
+
+* {
+  padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+  font-family: 'GoreFont', sans-serif;                                         
+}
+body{
+	background-color: wheat;    
+}
+
+
+.header {
+	background-color: black;
+	color: white;
+  display: flex;
+  justify-content: space-around;
+	width: 100%;
+	padding: 20px;
+	border-bottom: 2px solid wheat;
+}
+
+
+.footer {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+footer div {
+	padding: 2px;
+}
+
+a {
+	text-decoration: none; 
+	color: white;
+  letter-spacing: 2px;
+  padding: 0 10px;
+}
+ul {
+	list-style: none;	
+}
+h1 {
+	font-size: 13vh;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 11px black;
+  font-weight: bold;
+}
+h2 {
+	font-size: 20px; 
+}
+h3 {
+	border-bottom: solid 1px;
+	font-size: 16px;
+	padding: 50px 0px 10px;
+}
+h4 {
+	font-size: 30px;
+	text-align: center;
+}
+h5 {
+	font-size: 30px;
+}
+
+/* Class Selectors */
+.text-center {
+	text-align: center;
+	display: block;
+}
+.margin {
+	margin: 50px 0;	
+}
+.dropdown {
+	position: relative;	
+	display: inline-block;
+}
+.dropdown-btn {
+	padding: 10px 20px;
+	background-color: #014D96;
+	border-radius: 4px;
+	color:black;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.dropdown:hover .dropdown-btn {
+	border-radius: 4px 4px 0 0;
+}
+.dropdown-menu {
+	background-color: white;
+  position: absolute;
+  padding: 10px;
+  margin: 5px 0;
+	display: none;
+  border-radius: 20px;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown-menu ul {
+	padding: 0;
+	list-style: none;
+}
+.dropdown-menu li {
+	margin: 10px;
+}
+#navbar .dropdown-menu a {
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+  letter-spacing: 3px;
+}
+#navbar a:hover {
+	color: #e5e6e8;	
+}
+.button {
+	background-color: white;
+	border: 2px solid #333;
+	color: #333;
+	padding: 5px 15px;
+	border-radius: 4px;
+	text-decoration: none;
+	display: block;
+	width: 200px; 
+	text-align: center;
+}
+
+/* Helper Classes */
+.center-text {
+	text-align: center;	
+}
+
+/* ID Selector */
+#check-this-out-box {
+	padding: 10px; 
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 14px;
+}
+#quote-box {
+	padding: 30px; 
+	border-top: dotted 4px black;
+	border-bottom: dotted 4px black;
+	margin: 2px 0;
+	color: white;
+	background-color: black;
+	text-align: center; 
+	font-size: 2.2vh;
+	word-spacing: 3px;
+	letter-spacing: 1.5px;
+	font-style: italic;
+	z-index: 4;
+}
+#header-box {
+	width: 100%;
+	height: 90vh;
+	background: url('https://www.radiobruno.it/wp-content/uploads/2022/04/Fabri-Fibra-22-insta.jpg') top no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit: contain;
+}
+#header-box h1{
+margin-top:  -70px;
+}
+#header-box-2 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://media-assets.vanityfair.it/photos/62305e5310d6af99fe89e3d5/16:9/w_2560%2Cc_limit/Fabri%2520Fibra_foto%2520di%2520Mattia%2520Guolo.jpg') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-2 h1{
+margin: 0 auto;
+}
+#header-box-4 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://www.lascimmiapensa.com/wp-content/uploads/2017/10/fabrifibra-4domino.jpg.webp') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-7 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://www.hiphoprec.com/images/Fabri_Fibra_Rap.png') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-5 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://www.rollingstone.it/wp-content/uploads/2017/05/tommyfibra5.jpg') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-6 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://www.exclusivemagazine.it/wp-content/uploads/2020/04/Fabri-Fibra.jpg') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-3 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://www.notizie.it/wp-content/uploads/2016/10/I-40-anni-di-Fabri-Fibra.jpg') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-8 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://radionorba.it/wp-content/uploads/2017/03/fibra.jpg') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-9 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://www.105.net/resizer/1200/720/true/1498124345707.jpg--fabri_fibra__nuovo_singolo_a_sorpresa.jpg?1498124353680') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+#header-box-10 {
+	width: 100%;
+	height: 90vh;
+	background: url('https://static2.iodonna.it/wp-content/uploads/2022/03/fabri-fibra-insta-2-871x1024.jpg?v=1') top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+	padding-top: 300px;
+	padding-bottom: 50px;
+  object-fit:contain;
+}
+
+
+
+/* navbar */
+.navbar ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.navbar li {
+	display: inline-block;
+	padding: 0px 20px;
+	vertical-align: middle;
+}
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+
+/* STILI PER DISPOSITIVI MOBILI */
+@media only screen and (max-width: 600px) {
+  .container h1 {
+    font-size: 7vh;
+		padding: 0;
+		margin: 0 auto;
+  }
+	#header-box{
+	background-size: cover;
+	}
+	.container p{
+		font-size: 1.3vh;
+		margin: 0 auto;
+	}
+
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+		margin: 0 auto;
+  }
+	#header-box-2{
+		
+	}
+	#header-box-2 h1{
+		margin-left: -10px;
+	}
+
+	
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente gli elementi della navbar */
+    flex-direction: column; /* Imposta la direzione della colonna per gli elementi della navbar */
+    text-align: center; /* Centra il testo all'interno degli elementi della navbar */
+  }
+
+  .navbar li {
+    margin-bottom: 10px; /* Aggiunge spazio tra gli elementi della navbar */
+		display: block;
+  }
+
+  .navbar li a {
+    font-size: 14px; /* Imposta la dimensione del font per gli elementi della navbar */
+    padding: 5px;
+    margin: 0;
+  }
+
+  .dropdown {
+    text-align: center; /* Centra il testo all'interno dell'elemento dropdown */
+  }
+
+  .dropdown a {
+    font-size: 14px; /* Imposta la dimensione del font per gli elementi del dropdown */
+  }
+
+  .container-wrap {
+    padding: 0 20px;
+  }
+
+  .button {
+    padding: 5px 0;
+  }
+#header-box{
+	background-position:57% 50%;
+}
+#header-box-6{
+	background-position: 55% 50%;
+}
+#header-box-7{
+	background-position: 69% 50%;
+}
+#header-box-8{
+	background-position: 60% 50%;
+}
+#header-box-9{
+	background-position: 90% 50%;
+}
+
+}
+
+
+	/*TABLET*/
+	@media only screen and (min-width: 600px) and (max-width: 1024px) {
+		
+	
+	}
+	
+	
+	
+	/*DESKTOP*/
+	@media only screen and (min-width: 1024px){
+		
+	
+		}
+								

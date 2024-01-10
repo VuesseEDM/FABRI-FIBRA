@@ -1,0 +1,103 @@
+.scroll-indicator {
+  position: fixed;
+  bottom: 90px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.scroll-indicator-up {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.arrow {
+  font-size: 30px;
+  animation: bouncer 0.5s ease infinite alternate; 
+  color: white; /* Aggiungi il colore di default */
+  text-shadow:0 0 5px red;
+}
+
+.arrow:hover {
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  color: white;
+}
+
+.arrow:active {
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  color: wheat;
+  transform: translateY(2px); /* Aggiungi una piccola traslazione durante l'active state */
+}
+
+
+
+.down {
+  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px; /* Puoi regolare la distanza dal basso */
+  left: 50%;
+}
+
+
+.riga{
+ text-shadow:0 0 5px red; 
+  font-size: 30px;
+  animation: bounce 0.5s ease infinite alternate; 
+  color: white;
+}
+
+.riga:hover {
+text-shadow: 0 0 5px rgb(0, 0, 0);
+color: white;
+}
+
+.riga:active {
+text-shadow: 0 0 5px rgb(0, 0, 0);
+color: wheat;
+transform: translateY(2px); /* Aggiungi una piccola traslazione durante l'active state */
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-10px); 
+  }
+}
+
+@keyframes bouncer {
+  to {
+    transform: translateY(-20px); 
+  }
+}
+
+
+/* STILI PER DISPOSITIVI MOBILI */
+@media only screen and (max-width: 600px) {
+
+  .scroll-indicator {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  .scroll-indicator-up {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  .down{
+    margin-bottom: -42px;
+   
+    }
+
+  }
