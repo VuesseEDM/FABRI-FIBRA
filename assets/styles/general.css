@@ -82,22 +82,22 @@ transform: translateY(2px); /* Aggiungi una piccola traslazione durante l'active
   .scroll-indicator {
     position: fixed;
     bottom: 30px;
-    right:7%;
+    left:90%;
     cursor: pointer;
     transform: translateY(-50%);
     border-radius: 50%;
+font-size:30px;
   }
   .scroll-indicator-up {
     position: fixed;
-    top: 200px;
-    right:7%;
+    top: 90px;
+    left:90%;
     cursor: pointer;
     transform: translateY(-50%);
     border-radius: 50%;
+font-size:30px;
   }
-  .down{
-    margin-bottom: -42px;
-   
-    }
+.riga{
+font-size: 30px;
 
   }
